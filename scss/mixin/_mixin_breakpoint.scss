@@ -1,0 +1,88 @@
+// // ブレイクポイント
+// /*====================
+// {{スマホを基本設計にする}}
+//  - 〜479px：SP縦
+//  - 480px〜599px：SP横
+//  - 600px〜959px：タブレット
+//  - 960px〜1279px：小型PC
+//  - 1280px〜：大型PC
+//  min：値以上
+//  max：値以下
+// ====================*/
+
+// $sp_side_over: 480px; // - 480px〜599px：SP横
+// $tab_over: 600px; // - 600px〜959px：タブレット
+// $pc_small_over: 960px; // - 960px〜1279px：小型PC
+// $pc_big_over: 1280px; // - 1280px〜：大型PC
+
+// @mixin sp_side_over {
+//   @media (min-width: ($sp_side_over)) {
+//     @content;
+//   }
+// }
+// @mixin tab_over {
+//   @media (min-width: ($tab_over)) {
+//     @content;
+//   }
+// }
+// @mixin pc_small_over {
+//   @media (min-width: ($pc_small_over)) {
+//     @content;
+//   }
+// }
+// @mixin pc_big_over {
+//   @media (min-width: ($pc_big_over)) {
+//     @content;
+//   }
+// }
+
+// /*====================
+// {{pcを基本設計にする}}
+//  - 1280px〜：大型PC
+//  - 960px〜1279px：小型PC
+//  - 600px〜959px：タブレット
+//  - 480px〜599px：SP横
+//  - 〜479px：SP縦
+//  min：値以上
+//  max：値以下
+// ====================*/
+
+// $pc_small_under: 1279px; // - 960px〜1279px：小型PC
+// $tab_under: 959px; // - 600px〜959px：タブレット
+// $sp_side_under: 599px; // - 480px〜599px：SP横
+// $sp_normal_under: 479px; // - 〜479px：SP縦
+
+// @mixin pc_small_under {
+//   @media (max-width: ($pc_small_under)) {
+//     @content;
+//   }
+// }
+// @mixin tab_under {
+//   @media (max-width: ($tab_under)) {
+//     @content;
+//   }
+// }
+// @mixin sp_side_under {
+//   @media (max-width: ($sp_side_under)) {
+//     @content;
+//   }
+// }
+// @mixin sp_normal_under {
+//   @media (max-width: ($sp_normal_under)) {
+//     @content;
+//   }
+// }
+
+$sm: 428px;
+$breakpoints: (
+  sm: 'screen and (max-width: 428px)',
+  // 'md': 'screen and (min-width: 768px)',
+  // 'lg': 'screen and (min-width: 992px)',
+  // 'xl': 'screen and (min-width: 1200px)',,,,,,,,,
+) !default;
+
+@mixin media($bp) {
+  @media #{map-get($breakpoints, $bp)} {
+    @content;
+  }
+}

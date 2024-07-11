@@ -1,0 +1,17 @@
+.body-container {
+  font-family: 'Noto Sans JP', sans-serif;
+  //   font-family: 'Noto Sans JP-Bold', Helvetica;
+  //   Hiragino Kaku Gothic ProN
+  //   width: $body_mw;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  //   margin: 0 24px;
+
+  background-color: #fff;
+
+  scroll-behavior: smooth;
+  @include media(sm) {
+    max-width: 428px;
+  }
+}

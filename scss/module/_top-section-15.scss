@@ -1,0 +1,161 @@
+.top-section-15 {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -5px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  background-color: #e5f3f1;
+
+  @include media(sm) {
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+
+  .text-container-1 {
+    text-align: center;
+
+    .text-head-1 {
+      font-family: 'Oswald', 'Noto Sans JP', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+
+      margin-bottom: 20px;
+
+      text-align: center;
+      letter-spacing: 0;
+
+      color: #008474;
+
+      @include media(sm) {
+        font-size: 24px;
+      }
+      font-optical-sizing: auto;
+    }
+    .text-wrapper {
+      margin-bottom: 20px;
+      .text-1 {
+        font-size: 25px;
+        font-weight: 700;
+
+        letter-spacing: 2.6px;
+
+        color: #2e2e2e;
+
+        @include media(sm) {
+          font-size: 18px;
+        }
+      }
+
+      .span-1 {
+        display: inline-block;
+
+        width: 45px;
+
+        border: 2px solid #008474;
+      }
+    }
+  }
+
+  .qa-top-container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    @include media(sm) {
+      padding: 20px 0 0;
+    }
+
+    .qa-wrapper {
+      margin-bottom: 30px;
+
+      @include media(sm) {
+        max-width: 325px;
+        margin: 0 auto 24px;
+      }
+
+      .q-wrapper {
+        display: flex;
+
+        margin-bottom: 10px;
+        padding: 15px 20px;
+
+        border-radius: 15px;
+        background-color: #fff;
+
+        @include media(sm) {
+          align-items: center;
+
+          margin-bottom: 8px;
+          padding: 15px 15px;
+        }
+
+        .q-icon {
+          width: 48px;
+          height: 48px;
+          margin-right: 20px;
+
+          @include media(sm) {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+          }
+        }
+
+        .text-1 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 48px;
+
+          color: #008474;
+
+          @include media(sm) {
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+      }
+      .a-wrapper {
+        display: flex;
+
+        padding: 15px 20px;
+
+        border-radius: 15px;
+        background-color: #fff;
+
+        @include media(sm) {
+          align-items: start;
+
+          margin-bottom: 8px;
+          padding: 15px 15px;
+        }
+
+        .a-icon {
+          width: 48px;
+          height: 48px;
+          margin-right: 20px;
+
+          @include media(sm) {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+          }
+        }
+
+        .text-2 {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 48px;
+
+          color: #333;
+
+          @include media(sm) {
+            font-size: 13px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

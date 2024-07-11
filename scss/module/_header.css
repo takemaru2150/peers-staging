@@ -1,0 +1,136 @@
+.header {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  margin: 0 auto;
+  padding-top: 7px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: #fff;
+}
+
+.header .group-18 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.header .group-18 .logo {
+  width: 90px;
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+.header .group-18 .text-wrapper-11 {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.header .overlap-9 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.header .overlap-9 .navbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin-right: 20px;
+  gap: 16px;
+}
+
+.header .overlap-9 .navbar .text-wrapper-9 {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #311c20;
+}
+
+.header .overlap-9 .navbar .text-wrapper-9:hover {
+  color: #008474;
+}
+
+.header .overlap-9 .text-wrapper-12 {
+  font-size: 18px;
+  font-weight: 900;
+  position: relative;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 60px;
+  background-color: #fac40a;
+}
+
+.header .overlap-9 .text-wrapper-12::after {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  content: '';
+  background-image: url(../../img/2024/06/group-3640.svg);
+  background-size: contain;
+}
+
+.header .header-sp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header-sp .logo {
+  width: 90px;
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+.header .header-sp .hamburger-menu {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header .header-sp .hamburger-menu .menu-text {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.header .header-sp .hamburger-menu .span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transition: all .4s ease-in-out;
+  border-radius: 1px;
+  background-color: #333;
+}
+
+.header .header-sp .hamburger-menu .span:nth-of-type(1) {
+  top: 10px;
+}
+
+.header .header-sp .hamburger-menu .span:nth-of-type(2) {
+  bottom: 10px;
+}
+
+.header .header-sp .hamburger-menu.active .span:nth-of-type(1) {
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.header .header-sp .hamburger-menu.active .span:nth-of-type(2) {
+  transform: translateY(-4px) rotate(45deg);
+}

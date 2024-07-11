@@ -1,0 +1,118 @@
+// footer
+footer {
+  background-color: #1c1c1c;
+
+  .footer-container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 5px;
+
+    @include media(sm) {
+      max-width: 428px;
+    }
+
+    .footer-inner-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-bottom: 30px;
+
+      @include media(sm) {
+        flex-direction: column;
+      }
+      .img-wrapper {
+        @include media(sm) {
+          margin-bottom: 20px;
+        }
+        .footer-logo {
+          width: 200px;
+        }
+      }
+      .footer-nav {
+        display: flex;
+        justify-content: space-evenly;
+
+        @include media(sm) {
+          flex-direction: column;
+
+          text-align: center;
+
+          gap: 21px;
+        }
+        gap: 32px;
+
+        a {
+          font-size: 15px;
+          font-weight: 700;
+
+          text-decoration: none;
+
+          color: #fff;
+
+          &:hover {
+            color: #fac40a;
+          }
+        }
+      }
+    }
+    .footer-inner-2 {
+      display: flex;
+      justify-content: space-between;
+
+      @include media(sm) {
+        align-items: center;
+        flex-direction: column-reverse;
+
+        gap: 25px;
+      }
+      p,
+      a {
+        font-size: 15px;
+        font-weight: 400;
+
+        text-decoration: none;
+
+        color: #fff;
+      }
+      .copyright {
+        font-size: 16px;
+
+        letter-spacing: 1.6px;
+
+        color: #fff;
+
+        @include media(sm) {
+          font-size: 12px;
+
+          letter-spacing: 1.2px;
+        }
+      }
+
+      .link-wrapper {
+        a {
+          font-size: 14px;
+
+          letter-spacing: 1.4px;
+
+          @include media(sm) {
+            font-size: 16px;
+
+            letter-spacing: 1.6px;
+          }
+          &:hover {
+            color: #fac40a;
+          }
+        }
+
+        .link-1 {
+          &::after {
+            content: ' | ';
+          }
+        }
+      }
+    }
+  }
+} // /footer

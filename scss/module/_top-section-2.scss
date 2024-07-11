@@ -1,0 +1,347 @@
+// /top-section-2
+.top-section-2 {
+  position: relative;
+
+  background: linear-gradient(to bottom, #ebebeb, #868282);
+
+  .top-container {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 43px;
+
+    @include media(sm) {
+      position: inherit;
+
+      max-width: 428px;
+      padding: 40px 25px;
+    }
+
+    &::before {
+      font-family: 'Oswald', 'Noto Sans JP', sans-serif;
+      font-size: 226px;
+      font-weight: bold;
+
+      position: absolute;
+      z-index: 1;
+      top: -60px;
+      left: 50%;
+
+      content: 'PROBLEM';
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+
+      opacity: 1;
+      color: #dcdcdc;
+
+      @include media(sm) {
+        font-size: 68px;
+
+        top: 20px;
+      }
+    }
+
+    .text-wrapper {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 40px;
+
+      position: relative;
+      z-index: 2;
+
+      max-width: $text-wrapper-max-width;
+      margin-right: auto;
+      margin-left: auto;
+
+      text-align: center;
+      letter-spacing: .64px;
+
+      color: #333;
+
+      @include media(sm) {
+        font-size: 18px;
+
+        // padding-top: 40px;
+      }
+
+      .text-3 {
+        font-size: 40px;
+
+        letter-spacing: .35px;
+
+        color: #00433b;
+        background: linear-gradient(transparent 75%, #fac40a 75%);
+
+        @include media(sm) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .table-container {
+      position: relative;
+      z-index: 2;
+
+      display: flex;
+      justify-content: space-between;
+
+      max-width: $table-container-max-width;
+      margin: 40px auto 0;
+
+      color: #fff;
+
+      @include media(sm) {
+        align-items: center;
+        flex-direction: column;
+
+        margin: 50px auto 0;
+      }
+
+      .task-table-man {
+        position: absolute;
+        top: -128px;
+        left: 70px;
+
+        width: 110px;
+
+        @include media(sm) {
+          display: none;
+        }
+      }
+      .task-table-woman {
+        position: absolute;
+        top: -120px;
+        right: 70px;
+
+        width: 110px;
+
+        @include media(sm) {
+          display: none;
+        }
+      }
+      .table-wrapper-1 {
+        // width: 50%;
+        @include media(sm) {
+          width: 100%;
+        }
+
+        .table-head-wrapper {
+          position: relative;
+          .table-head-1 {
+            font-size: 30px;
+            font-weight: bold;
+
+            margin-right: auto;
+            margin-left: auto;
+            padding: 30px 0;
+
+            text-align: center;
+            letter-spacing: 1px;
+
+            border: 1px solid #00443c;
+            border-radius: 10px 10px 0 0;
+            background-color: #00443c;
+
+            @include media(sm) {
+              font-size: 20px;
+
+              padding: 20px 0;
+            }
+          }
+          .triangle {
+            position: absolute;
+            z-index: 1;
+            bottom: calc($triangle-width / -2 + 1px);
+            left: 50%;
+
+            width: $triangle-width;
+            height: calc($triangle-width / 2);
+
+            -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+
+            background-color: #00443c;
+
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+          }
+        }
+        .table-body-1 {
+          position: relative;
+
+          margin-right: auto;
+          padding-top: 20px;
+          padding-right: 20px;
+          padding-bottom: 40px;
+          padding-left: 30px;
+
+          border: 1px solid #008474;
+          border-radius: 0 0 10px 10px;
+          background-color: #008474;
+
+          @include media(sm) {
+            padding-right: 8px;
+            padding-bottom: 100px;
+            padding-left: 8px;
+          }
+
+          .text-wrapper-1 {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 32px;
+
+            position: relative;
+
+            width: 100%;
+            margin-bottom: 13px;
+            padding-left: 34px;
+
+            text-align: left;
+            white-space: nowrap;
+            // font-size: 16px;
+            letter-spacing: .5px;
+
+            color: #fff;
+
+            @include media(sm) {
+              font-size: 15px;
+
+              padding-left: 30px;
+
+              letter-spacing: 0;
+            }
+
+            .text-2 {
+              font-size: 18px;
+              font-weight: 700;
+
+              margin: 0 -3px;
+
+              background: linear-gradient(transparent 90%, #fac40a 90%);
+
+              @include media(sm) {
+                font-size: 17px;
+              }
+            }
+
+            &::before {
+              position: absolute;
+              top: 3px;
+              left: 0;
+
+              width: 23px;
+              height: 23px;
+
+              content: '';
+
+              background-image: url(../../img/2024/06/Icon-check-circle.svg);
+              background-repeat: no-repeat;
+              background-position: 50%;
+              background-size: contain;
+            }
+          }
+
+          .task-image {
+            position: absolute;
+            right: 41px;
+            bottom: 80px;
+
+            width: 95px;
+
+            @include media(sm) {
+              bottom: 5px;
+              left: 50%;
+
+              -webkit-transform: translateX(-50%);
+                  -ms-transform: translateX(-50%);
+                      transform: translateX(-50%);
+            }
+          }
+        }
+      }
+      .table-wrapper-1.table-wrapper-2 {
+        margin-left: 50px;
+
+        @include media(sm) {
+          margin-top: 30px;
+          margin-left: 0;
+        }
+
+        .table-head-1 {
+          border: 1px solid #008474;
+          background-color: #008474;
+        }
+        .triangle {
+          background-color: #008474;
+        }
+        .table-body-1 {
+          padding-bottom: 10px;
+
+          border: 1px solid #00443c;
+          background-color: #00443c;
+
+          @include media(sm) {
+            padding-bottom: 120px;
+          }
+          .task-image-2 {
+            position: absolute;
+            right: 29px;
+            bottom: 19px;
+
+            width: 70px;
+
+            @include media(sm) {
+              bottom: 15px;
+              left: 50%;
+
+              -webkit-transform: translateX(-50%);
+                  -ms-transform: translateX(-50%);
+                      transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+
+    .text-container-1 {
+      max-width: $text-container-1-max-width;
+      margin: 30px auto 30px;
+
+      border-radius: 16px;
+      background: linear-gradient(
+      180deg,
+      rgb(0, 132, 116) 0%,
+      rgb(0, 85.66, 75.85) 100%
+      );
+
+      .text-wrapper-2 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 40px;
+
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px 0;
+
+        text-align: center;
+        letter-spacing: .64px;
+
+        color: #fff;
+
+        @include media(sm) {
+          font-size: 18px;
+          line-height: 27px;
+
+          padding: 25px 15px;
+
+          letter-spacing: .864px;
+        }
+
+        .text-2 {
+          color: #fac40a;
+        }
+      }
+    }
+  }
+}
+// /top-section-2

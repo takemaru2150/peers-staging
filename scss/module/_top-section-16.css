@@ -1,0 +1,77 @@
+.top-section-16 {
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(to bottom right, #008474, #2aab9f 50%, #2accbd 77%, #e0fbea);
+}
+
+.top-section-16::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720px;
+  height: 370px;
+  content: '';
+  opacity: .5;
+  background-image: url(../../img/2024/06/contact-bg-icon-1.png);
+  background-size: contain;
+}
+
+.top-section-16::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 720px;
+  height: 370px;
+  content: '';
+  opacity: .5;
+  background-image: url(../../img/2024/06/contact-bg-icon-2.png);
+  background-size: contain;
+}
+
+.top-section-16 .text-container-1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.top-section-16 .text-container-1 .text-head-1 {
+  font-family: 'Oswald', 'Noto Sans JP', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #fff;
+  font-optical-sizing: auto;
+}
+
+.top-section-16 .text-container-1 .text-wrapper {
+  margin-bottom: 20px;
+}
+
+.top-section-16 .text-container-1 .text-wrapper .text-1 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2.6px;
+  color: #fff;
+}
+
+.top-section-16 .text-container-1 .text-wrapper .span-1 {
+  display: inline-block;
+  width: 45px;
+  border: 2px solid #fff;
+}
+
+.top-section-16 .img-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.top-section-16 .img-wrapper img {
+  width: 100%;
+}

@@ -1,0 +1,50 @@
+// baseファイル
+@import './base/_reset.scss';
+@import './base/_base.scss';
+
+//settingファイル
+@import './setting/_setting.scss';
+
+//mixinファイル
+@import './mixin/_mixin_calc.scss';
+@import './mixin/_mixin_breakpoint.scss';
+@import './mixin/_mixin_main.scss';
+@import './mixin/_mixin_sidebar.scss';
+@import './mixin/_mixin_footer.scss';
+
+.br-pc {
+  @include media(sm) {
+    display: none;
+  }
+}
+.br-sp {
+  display: none;
+
+  @include media(sm) {
+    display: inline;
+  }
+}
+
+//moduleファイル
+@import './module/_html.scss';
+@import './module/_body.scss';
+@import './module/_header.scss';
+@import './module/_main.scss';
+@import './module/_appeal-section.scss';
+@import './module/_top-section.scss';
+@import './module/_top-section-2.scss';
+@import './module/_top-section-3.scss';
+@import './module/_top-section-4.scss';
+@import './module/_top-section-5.scss';
+@import './module/_top-section-6.scss';
+@import './module/_top-section-7.scss';
+@import './module/_top-section-10.scss';
+@import './module/_top-section-12.scss';
+@import './module/_top-section-13.scss';
+@import './module/_top-section-15.scss';
+@import './module/_top-section-16.scss';
+@import './module/_sidebar.scss';
+@import './module/_footer.scss';
+
+// page
+@import './page/_thanks.scss';

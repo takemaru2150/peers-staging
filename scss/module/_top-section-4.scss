@@ -1,0 +1,239 @@
+// /top-section-4
+.top-section-4 {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -65px;
+    left: 97px;
+
+    width: 350px;
+    height: 350px;
+
+    content: '';
+
+    background-image: url(../../img/2024/06/about-bg-top.png);
+    background-size: contain;
+
+    @include media(sm) {
+      top: 0;
+      left: 0;
+
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+
+    width: 350px;
+    height: 350px;
+
+    content: '';
+
+    background-image: url(../../img/2024/06/about-bg-bottom.png);
+    background-size: contain;
+
+    @include media(sm) {
+      right: 0;
+      bottom: 290px;
+
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .top-container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: $top-section-4-max-width;
+    margin: 0 auto;
+
+    @include media(sm) {
+      max-width: 428px;
+      padding: 43px 25px;
+    }
+
+    .text-container {
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      text-align: center;
+
+      @include media(sm) {
+        margin-top: 0;
+      }
+
+      .text-head-1 {
+        font-family: 'Oswald', 'Noto Sans JP', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+
+        margin-bottom: 8px;
+
+        text-align: center;
+        letter-spacing: 0;
+
+        color: #008474;
+
+        font-optical-sizing: auto;
+        @include media(sm) {
+          font-size: 24px;
+        }
+      }
+      .text-1 {
+        font-size: 25px;
+        font-weight: 700;
+
+        letter-spacing: 2.6px;
+
+        color: #2e2e2e;
+
+        @include media(sm) {
+          font-size: 18px;
+        }
+      }
+
+      .span-1 {
+        display: inline-block;
+
+        width: 45px;
+
+        border: 2px solid #008474;
+      }
+    }
+
+    .top-container-2 {
+      display: flex;
+      align-self: start;
+      justify-content: space-between;
+
+      @include media(sm) {
+        flex-direction: column;
+
+        margin-bottom: 50px;
+      }
+
+      .text-container {
+        width: 40%;
+
+        text-align: left;
+
+        @include media(sm) {
+          width: 100%;
+
+          text-align: center;
+        }
+
+        .text-wrapper-1 {
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 36px;
+
+          padding-bottom: 16px;
+
+          letter-spacing: 1.15px;
+
+          border-bottom: 1px solid #000;
+
+          @include media(sm) {
+            font-size: 16px;
+            line-height: 29px;
+          }
+
+          &-text-1 {
+            font-weight: 700;
+
+            color: #2e2e2e;
+          }
+
+          &-text-2 {
+            font-weight: 800;
+
+            color: #008474;
+          }
+        }
+
+        .text-wrapper-2 {
+          font-size: 14px;
+          line-height: 32px;
+
+          padding-top: 16px;
+
+          letter-spacing: .45px;
+
+          @include media(sm) {
+            font-size: 13px;
+            line-height: 27px;
+
+            text-align: left;
+            letter-spacing: 0;
+          }
+
+          &-text-1 {
+            font-weight: 700;
+
+            color: #fff;
+            background-color: #008474;
+          }
+
+          &-text-2 {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .about-img-1 {
+        display: block;
+
+        width: 60%;
+
+        object-fit: contain;
+        @include media(sm) {
+          width: 100%;
+        }
+      }
+    }
+    .top-container-3 {
+      .text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 33px;
+
+        text-align: center;
+
+        @include media(sm) {
+          font-size: 13px;
+          line-height: 26px;
+        }
+      }
+    }
+
+    .top-container-4 {
+      max-width: 100%;
+      margin: 0 auto;
+      margin-top: 40px;
+
+      .youtube {
+        display: block;
+
+        width: 100%;
+        max-width: 750px;
+        height: 428px;
+        height: 100%;
+        max-height: 428px;
+        margin: 0 auto;
+
+        border-radius: 20px;
+
+        aspect-ratio: 16 / 9;
+      }
+    }
+  }
+}
+// /top-section-4

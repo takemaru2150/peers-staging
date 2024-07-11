@@ -1,0 +1,52 @@
+// 共通
+// -fontsize
+$fs_ttl_big: 20px;
+$fs_ttl_small: 16px;
+$fs_text_big: 14px;
+$fs_text_small: 12px;
+
+// header fontsize
+$fs_header5: 20px;
+$fs_header4: 18px;
+$fs_header3: 16px;
+$fs_header2: 14px;
+$fs_header1: 12px;
+
+// -fontweight
+$fw_ttl_big: 800;
+$fw_ttl_small: 600;
+$fw_text_normal: 300;
+
+// text
+$--text-01: rgba(51, 51, 51, 1);
+
+// _body.scss
+$body_mw: 1440px;
+$hm_outer_mw: 1140px;
+
+// _header.scss
+$header_h: 70px;
+
+// _main.scss
+$mainLogo_text_h: 40px;
+$section_mw: 1063px;
+$sectionBottom_inner_mb: 36px;
+
+// _sidebar.scss
+$sidebar_mw: 250px;
+
+// _footer.scss
+$footer_h: 60px;
+
+// +++++++++++++++++++++++++++++++
+$triangle-width: 30px;
+$table-container-max-width: 1000px;
+$text-container-1-max-width: $table-container-max-width;
+$text-wrapper-max-width: $table-container-max-width;
+$top-section-4-max-width: 1000px;
+$top-section-5-max-width: 1000px;
+$appeal-section-max-width: 1200px;
+$table-body-1-height: 320px;
+$top-bg-2-img-height: 760px;
+$top-bg-3-img-height: 280px;
+// +++++++++++++++++++++++++++++++

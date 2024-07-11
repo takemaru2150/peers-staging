@@ -1,0 +1,262 @@
+.top-section-10 {
+  .text-container {
+    height: 450px;
+    padding-top: 50px;
+
+    background-image: url(../../img/2024/06/plan-bg-pc.png);
+
+    @include media(sm) {
+      height: 375px;
+      padding-top: 40px;
+
+      background-image: url(../../img/2024/06/plan-bg-sp.png);
+    }
+
+    .text-container-1 {
+      text-align: center;
+
+      .text-head-1 {
+        font-family: 'Oswald', 'Noto Sans JP', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+
+        margin-bottom: 20px;
+
+        text-align: center;
+        letter-spacing: 0;
+
+        color: #fff;
+
+        @include media(sm) {
+          font-size: 24px;
+        }
+        font-optical-sizing: auto;
+      }
+      .text-wrapper {
+        margin-bottom: 20px;
+        .text-1 {
+          font-size: 25px;
+          font-weight: 700;
+
+          letter-spacing: 2.6px;
+
+          color: #fff;
+
+          @include media(sm) {
+            font-size: 18px;
+          }
+        }
+
+        .span-1 {
+          display: inline-block;
+
+          width: 45px;
+
+          border: 2px solid #fff;
+        }
+      }
+    }
+    .text-container-2 {
+      margin: 20px auto 40px;
+
+      .text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 33px;
+
+        text-align: center;
+
+        color: #fff;
+      }
+    }
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: -190px;
+    padding: 64px 40px;
+
+    text-align: center;
+
+    background-color: #fff;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, .3);
+
+    @include media(sm) {
+      max-width: 325px;
+      margin-top: -110px;
+      padding: 40px 15px;
+    }
+    .plan-img-1-pc {
+      width: 100%;
+      margin-bottom: 40px;
+
+      @include media(sm) {
+        display: none;
+      }
+    }
+    .plan-img-1-sp {
+      display: none;
+
+      @include media(sm) {
+        display: inline;
+
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+    .plan-img-2-pc {
+      width: 100%;
+
+      @include media(sm) {
+        display: none;
+      }
+    }
+    .plan-img-2-sp {
+      display: none;
+
+      @include media(sm) {
+        display: inline;
+
+        width: 100%;
+      }
+    }
+    .plan-img-triangle {
+      width: 100%;
+      max-width: 269px;
+      margin-bottom: 27px;
+
+      @include media(sm) {
+        max-width: 188px;
+      }
+    }
+    .plan-img-3-wrapper {
+      position: relative;
+      .plan-img-3-pc {
+        width: 100%;
+
+        @include media(sm) {
+          display: none;
+        }
+      }
+      .plan-img-3-sp {
+        display: none;
+
+        @include media(sm) {
+          display: inline;
+
+          width: 100%;
+        }
+      }
+
+      .contanct-btn-wrapper {
+        position: absolute;
+        right: 27px;
+        bottom: 50%;
+
+        width: 290px;
+
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+                transform: translateY(50%);
+
+        @include media(sm) {
+          right: 50%;
+          bottom: 32px;
+          // width: 100%;
+
+          width: 250px;
+
+          -webkit-transform: translateX(50%);
+              -ms-transform: translateX(50%);
+                  transform: none;
+                  transform: translateX(50%);
+        }
+        .easy30s {
+          position: absolute;
+          z-index: 1;
+          top: -22px;
+          left: 50%;
+
+          width: 230px;
+
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+
+          @include media(sm) {
+            top: -17px;
+
+            width: 164px;
+          }
+        }
+        .contact-btn {
+          font-size: 16px;
+          font-weight: 900;
+          line-height: 60px;
+
+          position: relative;
+
+          display: block;
+
+          height: 60px;
+          padding: 0 60px 60px;
+
+          transition: all .2s ease;
+          text-align: center;
+          text-decoration: none;
+
+          color: #333;
+          border-radius: 40px;
+          background-color: #f9c40a;
+          box-shadow: 0 4px 0 #a37f04;
+          // box-shadow: 0 9.57px 0 #a37f04;
+
+          @include media(sm) {
+            font-size: 14.5px;
+            line-height: 47px;
+
+            height: 47px;
+            padding: 0 51px 13px;
+          }
+
+          &::after {
+            position: absolute;
+            top: 5px;
+            right: 6px;
+
+            width: 50px;
+            height: 50px;
+
+            content: '';
+
+            background-image: url(../../img/2024/06/right-arrow-icon.svg);
+            background-size: contain;
+
+            @include media(sm) {
+              width: 43px;
+              height: 43px;
+            }
+          }
+
+          &:hover {
+            -webkit-transform: translateY(4px);
+                    transform: translateY(4px);
+
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  // .img-wrapper {
+  //   width: 100%;
+  //   max-width: 1080px;
+  //   margin: 0 auto;
+
+  //   .plan-img-1 {
+  //     width: 100%;
+  //   }
+  // }
+}

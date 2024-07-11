@@ -1,0 +1,11 @@
+@mixin calc_vw ($property, $expression, $viewPort_width : 1440) {
+  #{$property}: -moz-calc(#{$expression} * 100vw / #{$viewPort_width});
+  #{$property}: -webkit-calc(#{$expression} * 100vw / #{$viewPort_width});
+  #{$property}: calc(#{$expression} * 100vw / #{$viewPort_width});
+}
+
+@mixin calc_per ($property, $expression, $percentage_width : 1063) {
+  #{$property}: -moz-calc(#{$expression} * 100% / #{$percentage_width});
+  #{$property}: -webkit-calc(#{$expression} * 100% / #{$percentage_width});
+  #{$property}: calc(#{$expression} * 100% / #{$percentage_width});
+}
