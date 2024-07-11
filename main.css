@@ -4589,7 +4589,7 @@ footer {
 }
 @media screen and (max-width: 428px) {
   footer {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 }
 footer .footer-container {
