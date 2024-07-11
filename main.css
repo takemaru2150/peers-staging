@@ -4587,6 +4587,11 @@ html {
 footer {
   background-color: #1c1c1c;
 }
+@media screen and (max-width: 428px) {
+  footer {
+    margin-bottom: 70px;
+  }
+}
 footer .footer-container {
   width: 100%;
   max-width: 1080px;
