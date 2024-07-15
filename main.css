@@ -787,10 +787,8 @@ html {
   }
 }
 
-@media screen and (max-width: 428px) {
-  .main {
-    margin-top: 70px;
-  }
+.main {
+  margin-top: 70px;
 }
 
 .appeal-section {
