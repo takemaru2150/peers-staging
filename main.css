@@ -381,10 +381,16 @@ html {
   font-weight: 500;
   line-height: normal;
 
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  width: 100vw;
   height: 70px;
   margin: 0 auto;
   padding-top: 7px;
@@ -770,11 +776,14 @@ html {
     position: fixed;
     z-index: 1;
     bottom: 0;
-    left: 0;
+    bottom: .9375rem;
+    left: 50%;
 
     display: block;
 
-    width: 100vw;
+    width: calc(100% - 1.25rem);
+
+    transform: translateX(-50%);
   }
 }
 
@@ -1402,7 +1411,7 @@ html {
 
   content: '';
 
-  background-image: url(./img/2024/06/download-btn.svg);
+  background-image: url(./img/2024/06/download-btn.png);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain;
@@ -3553,6 +3562,7 @@ html {
     padding-top: 40px;
 
     background-image: url(./img/2024/06/plan-bg-sp.png);
+    background-size: cover;
   }
 }
 .top-section-10 .text-container .text-container-1 {
@@ -4059,19 +4069,20 @@ html {
   margin: 0 auto;
 }
 .top-section-13 .card-container .card-wrapper .card-inner {
-  padding: 50px 26px 0;
+  padding: 40px 26px 0;
 }
 @media screen and (max-width: 428px) {
   .top-section-13 .card-container .card-wrapper .card-inner {
-    padding: 42px 26px 24px;
+    padding: 32px 26px 24px;
   }
 }
 .top-section-13 .card-container .card-wrapper .card-inner .head-1 {
   font-size: 22px;
   font-weight: 700;
+  line-height: 62px;
 
+  height: 62px;
   margin-bottom: 10px;
-  padding-bottom: 30px;
 
   text-align: center;
 }
@@ -4102,7 +4113,9 @@ html {
   font-size: 10px;
 }
 .top-section-13 .card-container .card-wrapper:nth-child(1) .head-1 {
-  padding-bottom: 0;
+  line-height: inherit;
+
+  height: auto;
 }
 
 .top-section-15 {
@@ -4589,7 +4602,7 @@ footer {
 }
 @media screen and (max-width: 428px) {
   footer {
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
 }
 footer .footer-container {
