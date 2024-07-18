@@ -2682,6 +2682,9 @@ html {
   }
 }
 .top-section-5 .reason-img-6 {
+  position: relative;
+  z-index: 1;
+
   display: block;
 
   width: 100%;
